@@ -53,7 +53,7 @@ const Comment = ({comment, deleteComment, i}) => {
                     <button className="comment_button" onClick={() => {deleteComment(i)}}>削除</button>
                 </div>  
 
-                <div id="sbl" className="comment_row">
+                <div className="comment_symbolWrapper">
                     <div>
                         <img src={png1} className="comment_symbol" onClick={handleIsRepOpen}/>
                     </div>

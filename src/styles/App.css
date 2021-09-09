@@ -64,6 +64,10 @@
 .comment_txt {
   font-size: 1.5rem;
 }
+.comment_symbolWrapper {
+  justify-content: space-around;
+  display: flex;
+}
 .comment_symbol {
   width: 35px;
 }
@@ -138,10 +142,3 @@
   display: flex;
   flex-direction: column;
 }
-
-#sbl {
-  justify-content: space-around;
-  margin-bottom: 15px;
-}
-
-
