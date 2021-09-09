@@ -32,6 +32,30 @@ const Timeline = () => {
         }
     }
 
+    const editComment = (i) => {
+        console.log(comments[i].username);
+        const lines = [comments[i].txt.split(" ")[0], comments[i].txt.split(" ")[1], comments[i].txt.split(" ")[2]]
+        const newLines = [];
+        for(let j = 0; j <3; j++) {
+            while(true) {
+                const txt = prompt(`${j+1} 番目: ${lines[j]}`);
+                if(typeof txt === "object") {
+                    j = 3;
+                    break
+                } else if(txt.trim() !== "") {
+                    newLines.push(txt);
+                    break;
+                } else alert("クウハク ニ スルナ");
+            }
+        }
+
+        const newTxt = newLines[0] && newLines[1] && newLines[2] ?　newLines[0] + " " + newLines[1] + " " + newLines[2] : comments[i].txt;
+        setComments([...comments.slice(0, i), {username: comments[i].username, txt: newTxt, rep: []}, ...comments.slice(i+1)])
+        // if(newTxt !== "") setComments([...comments.slice(0, i), {username: "Kazuma", txt: newTxt, rep: []}, ...comments.slice(i+1)])
+
+
+    }
+
     return(
         <>
             <header className="timeline_title"><h1>ホーム</h1></header>
@@ -44,7 +68,7 @@ const Timeline = () => {
                 <button type="button" onClick={handleComments} className="timeline_btn">送信</button>
             </div>
             {comments.map((comment, i) => (
-                <Comment key={i} comment={comment} deleteComment={deleteComment} i={i}/>
+                <Comment key={i} comment={comment} deleteComment={deleteComment} editComment={editComment} i={i}/>
             ))}
         </>
     )

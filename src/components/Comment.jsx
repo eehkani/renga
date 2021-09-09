@@ -3,7 +3,7 @@
 import Reply from "./Reply";
 import React, {useState} from "react";
 
-const Comment = ({comment, deleteComment, i}) => {
+const Comment = ({comment, deleteComment, editComment, i}) => {
 
     const icon01 = "https://cdn.discordapp.com/attachments/764477223067058196/876532226001629204/image0.png"
     const png1 = "https://cdn.discordapp.com/attachments/764477223067058196/876543281054507018/image0.png"
@@ -49,7 +49,10 @@ const Comment = ({comment, deleteComment, i}) => {
                             <div className="comment_txt">{comment.txt}</div>
                         </div>
                     </div>
-                    <button className="comment_button" onClick={() => {deleteComment(i)}}>削除</button>
+                    <span>
+                        <button className="comment_button" onClick={() => {editComment(i)}}>編集</button>
+                        <button className="comment_button" onClick={() => {deleteComment(i)}}>削除</button>
+                    </span>
                 </div>  
 
                 <div className="comment_symbolWrapper">
