@@ -1,0 +1,147 @@
+/* Timeline */
+.timeline_title {
+  background-color: white;
+  border-bottom: 1px solid rgb(223, 223, 223);
+  font-size: 2rem;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+}
+.timeline_postWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 16px auto;
+}
+.timeline_post {
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 1rem;
+  margin-bottom: 8px;
+  padding: 16px;
+}
+.timeline_btn {
+  background-color: #888;
+  border-radius: 1rem;
+  color: #fff;
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+  width: 60%;  
+}
+
+
+
+/* Comment */
+.comment_card {
+  border-bottom: 1px solid rgb(191, 191, 191);
+  padding: 24px;
+}
+.comment_item {
+  display: flex;
+  justify-content: space-between;
+}
+.comment_row {
+  display: flex;
+}
+.comment_icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.comment_name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.comment_nameBox {
+  margin-left: 10px;
+}
+.comment_id{
+  font-size: 1.2rem;
+  color: rgb(100, 100, 100);
+  display: flex;
+  align-items: flex-end;
+}
+.comment_txt {
+  font-size: 1.5rem;
+}
+.comment_symbol {
+  width: 35px;
+}
+.comment_button {
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  display: flex;
+  height: 2rem;
+  padding: 8px 16px;
+}
+.comment_reply {
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 0.6rem;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px;
+}
+.comment_btn{
+  background-color: #888;
+  border-radius: 0.6rem;
+  color: #fff;
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 8px;
+  width: 60px; 
+}
+
+/* Reply */
+.reply_row {
+  display: flex;
+}
+.reply_icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.reply_nameBox {
+  margin-left: 10px;
+}
+.reply_name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.reply_id{
+  font-size: 1.2rem;
+  color: rgb(100, 100, 100);
+  display: flex;
+  align-items: flex-end;
+}
+.reply_txt {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+
+#box1{
+  margin: 2%;
+}
+
+.btn{
+  margin-left: 40%;
+  width: 20%;
+}
+
+.center{
+  margin-left: 40%;
+}
+
+.reverse{
+  display: flex;
+  flex-direction: column;
+}
+
+#sbl {
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+
