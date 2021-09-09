@@ -16,8 +16,7 @@ const Comment = ({comment, deleteComment, i}) => {
     const [goods, setGoods] = useState(0)
 
     const retweet = () => {  
-        alert("リツイートはさせません")
-        
+        alert("リツイートはさせません!!")
     }
 
     const reply = () => {
