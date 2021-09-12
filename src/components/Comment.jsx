@@ -44,7 +44,7 @@ const Comment = ({comment, deleteComment, editComment, i}) => {
                         <div className="comment_nameBox">
                             <div className="comment_row">
                                 <div className="comment_name">{comment.username}</div>
-                                <div className="comment_id">@K_azuma</div>
+                                <div className="comment_id">@{comment.userId}</div>
                             </div>
                             <div className="comment_txt">{comment.txt}</div>
                         </div>
